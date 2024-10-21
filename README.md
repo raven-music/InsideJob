@@ -1,13 +1,5 @@
 # Inside Job
 
-★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
-
-Hi! If you find this project helpful, please consider giving it a star. Your support is appreciated!
-
-★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
-
-![Inside Job](.assets/InsideJob.jpg)
-
 ## Order of business
 1. Get local admin rights
 2. Disable defender on local machine

